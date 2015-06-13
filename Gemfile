@@ -2,16 +2,9 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '4.1.1'
-
 gem 'rails-api'
-
 gem 'spring', :group => :development
-
-
-gem 'activerecord-jdbcsqlite3-adapter'
-
-
-gem 'jruby-openssl'
+gem "mongoid", "~> 4.0.0"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -27,3 +20,10 @@ gem 'jruby-openssl'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :test, :development do
+  gem 'rspec'
+  gem 'rspec-rails'
+  gem 'pry'
+  gem 'pry-rails'
+end
